@@ -34,8 +34,10 @@ export class Movie {
                 console.log(this.actors[i].showDetails() + "\n");
             } 
 
-            console.log("\n" + "\u00A4" + "Nationality: " +  this.nationality + "\n" + "\n" + "\u00A4" + "Director: " + "\n" + this.director.showDetails() + "\n" + "\n" + "\u00A4" + "Writer: " + this.writer + "\n" + "\n" + "\u00A4" + "Language: " + this.language + "\n" +
-            "\n" + "\u00A4" + "Platform: " + this.platform + "\n" + "\n" + "\u00A4" + "Is MCU?: " + this.isMCU + "\n" + "\n" + "\u00A4" + "Main Character Name: " + this.mainCharacterName + "\n" + "\n" + "\u00A4" + "Producer: ");
+            console.log("\n" + "\u00A4" + "Nationality: " +  this.nationality + "\n" + "\n" + "\u00A4" + "Director: " + "\n" + this.director.showDetails() +
+            "\n" + "\n" + "\u00A4" + "Writer: " + this.writer + "\n" + "\n" + "\u00A4" + "Language: " + this.language + "\n" + "\n" + "\u00A4" + "Platform: " +
+            this.platform + "\n" + "\n" + "\u00A4" + "Is MCU?: " + this.isMCU + "\n" + "\n" + "\u00A4" + "Main Character Name: " + this.mainCharacterName +
+            "\n" + "\n" + "\u00A4" + "Producer: ");
 
             for (i = 0; i < this.producer.length;i++) {
                 console.log(this.producer[i].showDetails() + "\n");
