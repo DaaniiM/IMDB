@@ -6,7 +6,7 @@ import { Movie } from "./movies";
 
 
 
-let pelicula1 = new Movie("El castigador",2001,"North American","Action");
+export let pelicula1 = new Movie("El castigador",2001,"North American","Action");
 
 
 pelicula1.actors = [actor1,actor2];
@@ -19,11 +19,8 @@ pelicula1.mainCharacterName = "Joshua Perkins";
 pelicula1.producer = [producer1,producer2];
 pelicula1.distributor = "Sony";
 
-pelicula1.filmsDetails();
 
-console.log("---------------------------------------------------------------------------------");
-
-let pelicula2 = new Movie("Spiderman - Far from Codenotch",2021, "Spanish", "Action");
+export let pelicula2 = new Movie("Spiderman - Far from Codenotch",2021, "Spanish", "Action");
 
 pelicula2.actors = [actor3, actor5];
 pelicula2.director = director2;
@@ -35,11 +32,8 @@ pelicula2.mainCharacterName = "Peter Parker";
 pelicula2.producer = [producer4,producer9];
 pelicula2.distributor = "Marvel";
 
-pelicula2.filmsDetails();
 
-console.log("---------------------------------------------------------------------------------");
-
-let pelicula3 = new Movie("Escape Total", 1990,"British", "Comedy-action");
+export let pelicula3 = new Movie("Escape Total", 1990,"British", "Comedy-action");
 
 pelicula3.actors = [actor8, actor9];
 pelicula3.director = director5;
@@ -51,4 +45,3 @@ pelicula3.mainCharacterName = "Francis Johnson";
 pelicula3.producer = [producer6,producer8];
 pelicula3.distributor = "Amazon";
 
-pelicula3.filmsDetails();

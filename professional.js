@@ -17,10 +17,11 @@ var Professional = /** @class */ (function () {
         this.profession = profession;
     }
     Professional.prototype.showDetails = function () {
-        return "\t" + "\u00BB" + "Name: " + this.name + "\n" + "\t" + "\u00BB" + "Age: " + this.age + "\n" + "\t" + "\u00BB" + "Gener: " + this.gener + "\n" + "\t" + "\u00BB" + "Weight: " +
-            this.weight + "\n" + "\t" + "\u00BB" + "Height: " + this.height + "\n" + "\t" + "\u00BB" + "Hair color: " + this.hairColor + "\n" + "\t" + "\u00BB" + "Eye color: " +
-            this.eyeColor + "\n" + "\t" + "\u00BB" + "Race: " + this.race + "\n" + "\t" + "\u00BB" + "Is retired?: " + this.isRetired + "\n" + "\t" + "\u00BB" + "Nationality: " +
-            this.nationality + "\n" + "\t" + "\u00BB" + "Oscar numbers: " + this.oscarsNumbers + "\n" + "\t" + "\u00BB" + "Profession: " + this.profession;
+        return "\t" + "\u00BB" + "Name: " + this.name + "\n" + "\t" + "\u00BB" + "Age: " + this.age + "\n" + "\t" + "\u00BB" + "Gener: " + this.gener +
+            "\n" + "\t" + "\u00BB" + "Weight: " + this.weight + "\n" + "\t" + "\u00BB" + "Height: " + this.height + "\n" + "\t" + "\u00BB" + "Hair color: " +
+            this.hairColor + "\n" + "\t" + "\u00BB" + "Eye color: " + this.eyeColor + "\n" + "\t" + "\u00BB" + "Race: " + this.race + "\n" + "\t" + "\u00BB" +
+            "Is retired?: " + this.isRetired + "\n" + "\t" + "\u00BB" + "Nationality: " + this.nationality + "\n" + "\t" + "\u00BB" + "Oscar numbers: " +
+            this.oscarsNumbers + "\n" + "\t" + "\u00BB" + "Profession: " + this.profession;
     };
     return Professional;
 }());
