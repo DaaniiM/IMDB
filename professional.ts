@@ -35,9 +35,10 @@ export class Professional{
 
     public showDetails(){
 
-        console.log("Name: " + this.name + "\n" + "Age: " + this.age + "\n" + "Gener: " + this.gener + "\n" + "Weight: " + this.weight + "\n" + "Height: " + this.height + "\n" + "Hair color: " +
-        this.hairColor + "\n" + "Eye color: " + this.eyeColor + "\n" + "Race: " + this.race + "\n" + "Is retired?: " + this.isRetired + "\n" + "Nationality: " + this.nationality + "\n" + 
-        "Oscar numbers: " + this.oscarsNumbers + "\n" + "Profession: " + this.profession);
+        return "\t" + "\u00BB" + "Name: " + this.name + "\n" + "\t" + "\u00BB" + "Age: " + this.age + "\n" + "\t" + "\u00BB" + "Gener: " + this.gener + "\n" + "\t" + "\u00BB" + "Weight: " +
+        this.weight + "\n" + "\t" + "\u00BB" + "Height: " + this.height + "\n" + "\t" + "\u00BB" + "Hair color: " + this.hairColor + "\n" + "\t" + "\u00BB" +  "Eye color: " +
+        this.eyeColor + "\n" + "\t" + "\u00BB" + "Race: " + this.race + "\n" + "\t" + "\u00BB" + "Is retired?: " + this.isRetired + "\n" + "\t" + "\u00BB" + "Nationality: " + 
+        this.nationality + "\n" + "\t" + "\u00BB" + "Oscar numbers: " + this.oscarsNumbers + "\n" + "\t" + "\u00BB" + "Profession: " + this.profession;
 
 
     }
