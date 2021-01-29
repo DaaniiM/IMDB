@@ -1,14 +1,11 @@
 "use strict";
 exports.__esModule = true;
+exports.peliculasAll = void 0;
 var IMDB_1 = require("./IMDB");
 var mainMovies_1 = require("./mainMovies");
-var peliculasAll = new IMDB_1.Imdb([mainMovies_1.pelicula1, mainMovies_1.pelicula2, mainMovies_1.pelicula3]);
-/*
-
-console.log(peliculasAll);
-
-*/
-var peliculasJson = JSON.stringify(peliculasAll);
-console.log(peliculasJson);
+exports.peliculasAll = new IMDB_1.Imdb([mainMovies_1.pelicula1, mainMovies_1.pelicula2, mainMovies_1.pelicula3]);
+var peliculasJson = JSON.stringify(exports.peliculasAll);
 var fs = require('fs');
 fs.writeFileSync('imdbBBDD.json', peliculasJson);
+var allFilms = new IMDB_1.Imdb(JSON.parse(fs.readFileSync('./imdbBBDD.json')));
+console.log(allFilms.obtenerInstanciaIMDB("./imdbBBDD.json"));
