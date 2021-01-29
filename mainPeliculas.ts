@@ -1,7 +1,7 @@
 
 import { Movie } from "./movies";
-import { Imdb } from "./IMDB";
-import { pelicula1, pelicula2, pelicula3 } from "./mainMovies";
+
+import { peliculasAll } from "./mainIMDB";
 /*
 
 const preguntas = [
@@ -56,24 +56,15 @@ rl.question('Cual es el titulo de la película?: ', (answer1) => {
                 
             let peliculaNueva = new Movie (answer1,answer2,answer3,answer4);
 
-
-            let peliculasAll = new Imdb([pelicula1,pelicula2,pelicula3,peliculaNueva]);
-
-
+            peliculasAll.peliculas.push(peliculaNueva);
 
             peliculasAll.escribirEnFicheroJSON('./imdbBBDD.json');
 
-            console.log(peliculasAll.obtenerInstanciaIMDB('./imdbBBDD.json'));
+            peliculasAll.obtenerInstanciaIMDB('./imdbBBDD.json');
+                
 
         rl.close();
             });
         });
     });
 });
-
-
-
-
-
-
-
