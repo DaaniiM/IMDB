@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var movies_1 = require("./movies");
-var mainIMDB_1 = require("./mainIMDB");
+var IMDB_1 = require("./IMDB");
 /*
 
 const preguntas = [
@@ -48,10 +48,11 @@ rl.question('Cual es el titulo de la película?: ', function (answer1) {
     rl.question('En que año se estrenó la película?: ', function (answer2) {
         rl.question('De que nacionalidad es? : ', function (answer3) {
             rl.question('A que genero corresponde? : ', function (answer4) {
+                var libreria = new IMDB_1.Imdb([]);
+                libreria = libreria.obtenerInstanciaIMDB('imdbBBDD.json');
                 var peliculaNueva = new movies_1.Movie(answer1, answer2, answer3, answer4);
-                mainIMDB_1.peliculasAll.peliculas.push(peliculaNueva);
-                mainIMDB_1.peliculasAll.escribirEnFicheroJSON('./imdbBBDD.json');
-                mainIMDB_1.peliculasAll.obtenerInstanciaIMDB('./imdbBBDD.json');
+                libreria.peliculas.push(peliculaNueva);
+                libreria.escribirEnFicheroJSON('imdbBBDD.json');
                 rl.close();
             });
         });

@@ -2,6 +2,7 @@
 import { Movie } from "./movies";
 
 import { peliculasAll } from "./mainIMDB";
+import { Imdb } from "./IMDB";
 /*
 
 const preguntas = [
@@ -53,14 +54,16 @@ rl.question('Cual es el titulo de la película?: ', (answer1) => {
         rl.question('De que nacionalidad es? : ', (answer3) => {
             rl.question('A que genero corresponde? : ', (answer4) => {
                 
-                
+            let libreria = new Imdb([]);
+
+            libreria = libreria.obtenerInstanciaIMDB('imdbBBDD.json');
+
             let peliculaNueva = new Movie (answer1,answer2,answer3,answer4);
 
-            peliculasAll.peliculas.push(peliculaNueva);
+            libreria.peliculas.push(peliculaNueva);
 
-            peliculasAll.escribirEnFicheroJSON('./imdbBBDD.json');
+            libreria.escribirEnFicheroJSON('imdbBBDD.json');
 
-            peliculasAll.obtenerInstanciaIMDB('./imdbBBDD.json');
                 
 
         rl.close();
